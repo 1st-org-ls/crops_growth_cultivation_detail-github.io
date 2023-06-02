@@ -55,7 +55,7 @@
       var pageInput = document.getElementById("number").value;
       var pageNumber = parseInt(pageInput);
       if (pageNumber >= 1 && pageNumber <= 5) {
-        var pageURL = "page" + pageNumber + ".html";
+        var pageURL = "../page" + pageNumber + ".html";
         window.location.href = pageURL;
       } else {
         alert("Invalid page number. Please enter a number between 1 and 5.");
