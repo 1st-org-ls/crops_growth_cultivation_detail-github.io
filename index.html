@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <style>
+      body{
+        background-color: #FFD3A3;
+     }
+      #index{
+        background-color: #FFB84C;
+        height: 15cm;
+        width: 90%;
+      }
+      h1{
+        font-size: 50px;
+      }
+      h2{
+        font-size: 30px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <div id="index">
+    <br>
+    <h1>INDEX </h1>
+    <div id="crops">
+    <h2>1. Rice</h2>
+    <h2>2. Corn</h2>
+    <h2>3. Chilli</h2>
+    <h2>4. Tomato</h2>
+    <h2>5. Peanut</h2>
+    </div>
+    <br>
+    <br>
+    <form id="form">
+      <lable>Enter Your Option Number to go Detail :</lable>
+      <br><br>
+      <input type="number" id="number"></input>
+      <button onclick="openPage()">Go</button>
+    </form>
+    </div>
+    </center>
+    
+    
+    <script>
+      function openPage() {
+      var pageInput = document.getElementById("number").value;
+      var pageNumber = parseInt(pageInput);
+      if (pageNumber >= 1 && pageNumber <= 5) {
+        var pageURL = "page" + pageNumber + ".html";
+        window.location.href = pageURL;
+      } else {
+        alert("Invalid page number. Please enter a number between 1 and 5.");
+      }
+    }
+    </script>
+  </body>
+</html>
