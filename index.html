@@ -53,18 +53,25 @@
     <script>
       function openPage(){
         var option = document.getElementById('option').value;
-        if (option == 1)
+        if (option == 1){
           location = '../rice.html';
-        else if (option == 2)
+        }
+        else if (option == 2){
           location = './corn.html';
-        else if (option == 3)
+        }
+        else if (option == 3){
           location = 'chilli.html';
-        else if (option == 4)
+        }
+        else if (option == 4){
           location = 'tomato.html';
-        else if(option == 5)
+          
+        }
+        else if(option == 5){
           location = 'peanut.html';
-        else
+        }
+        else{
           alert("\nInvalid!\n\nEnter a valid Number");
+        }
         return false;
       }
     </script>
